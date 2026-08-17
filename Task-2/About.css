@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+}
+header {
+    background-color: #3498db;       /* HEX color */
+    color: white;
+    padding: 25px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+#about {
+    background-color: rgb(46, 204, 113);     /* RGB color */
+    color: white;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.intro {
+    font-size: 20px;
+    font-weight: bold;
+}
+.movie-list {
+    list-style-type: upper-roman;
+    padding: 20px;
+}
+.city-list {
+    list-style-type: square;
+    padding: 20px;
+}
+.movie-list li:hover {
+    background-color: #3498db;
+    color: white;
+    padding: 5px;
+}
+.city-list li:hover {
+    background-color: rgb(46, 204, 113);
+    color: white;
+    padding: 5px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
