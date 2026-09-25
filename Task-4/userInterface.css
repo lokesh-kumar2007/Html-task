@@ -1,0 +1,113 @@
+```css
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Navbar */
+.nav-link:hover {
+    color: cyan !important;
+}
+
+/* Home */
+.hero {
+    background: #07152e;
+    color: white;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Space */
+.space {
+    height: 400px;
+    position: relative;
+}
+
+.rocket {
+    position: absolute;
+    font-size: 80px;
+    left: 40%;
+    top: 30%;
+    animation: move 4s infinite;
+}
+
+.astronaut {
+    position: absolute;
+    font-size: 60px;
+    right: 20%;
+    top: 50%;
+    animation: float 3s infinite;
+}
+
+/* Rocket Animation */
+@keyframes move {
+    0% {
+        transform: translate(0, 100px);
+    }
+    50% {
+        transform: translate(50px, -50px);
+    }
+    100% {
+        transform: translate(0, 100px);
+    }
+}
+
+/* Astronaut Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+/* Missions */
+.missions {
+    background: #f2f2f2;
+}
+
+.mission-card {
+    height: 100%;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .space {
+        height: 300px;
+    }
+
+    .rocket {
+        font-size: 60px;
+    }
+    .astronaut {
+        font-size: 45px;
+    }
+}
+
